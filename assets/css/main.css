@@ -3256,19 +3256,21 @@ button:hover,
     box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
 }
 
-/* Sidebar Header Adjustments */
-#header {
-    background: #3B7FB3 !important; /* Exact match for your provided blue */
-    width: 25% !important; /* Shrinks the sidebar width */
-}
-
-/* Adjust main content area to fit the new sidebar width */
-#main {
-    margin-left: 25% !important; 
+/* Reduce Sidebar Width & Expand Main Content (Desktop Only) */
+@media screen and (min-width: 981px) {
+    #header {
+        background: #3B7FB3 !important;
+        width: 25% !important;
+    }
+    #main {
+        margin-left: 25% !important;
+        max-width: 100% !important;
+        padding-right: 6em !important;
+    }
 }
 
 /* Improve Project Description Legibility */
-article p {
+#main p {
     font-size: 1.1em !important; /* Increases text size slightly */
     color: #444444 !important; /* Darkens text for better contrast against white */
     line-height: 1.6em !important;
