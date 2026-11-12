@@ -3219,3 +3219,51 @@ input, select, textarea {
 			}
 
 	}
+
+/* Custom Accent Color Overrides */
+a {
+    color: #007BFF !important;
+}
+a:hover {
+    color: #0056b3 !important;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    background-color: transparent !important;
+    border-color: #007BFF !important;
+    color: #007BFF !important;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+button:hover,
+.button:hover {
+    background-color: rgba(0, 123, 255, 0.05) !important;
+    border-color: #007BFF !important;
+    color: #007BFF !important;
+}
+
+/* Project Image Hover Effects */
+.image.fit img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    border-radius: 4px; /* Softens the sharp corners slightly */
+}
+.image.fit:hover img {
+    transform: scale(1.03) !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Sidebar Header Brightening */
+#header {
+    background: linear-gradient(135deg, #007BFF 0%, #00A896 100%) !important;
+    color: #ffffff !important;
+}
+#header h1, #header h2, #header h3, #header p, #header strong {
+    color: #ffffff !important;
+}
+#header .image.avatar {
+    border: 3px solid rgba(255, 255, 255, 0.8) !important; /* Adds a nice white ring around your photo */
+}
