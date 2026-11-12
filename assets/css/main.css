@@ -3256,14 +3256,26 @@ button:hover,
     box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
 }
 
-/* Sidebar Header Brightening */
+/* Sidebar Header Adjustments */
 #header {
-    background: linear-gradient(135deg, #007BFF 0%, #00A896 100%) !important;
-    color: #ffffff !important;
+    background: #3B7FB3 !important; /* Exact match for your provided blue */
+    width: 25% !important; /* Shrinks the sidebar width */
 }
-#header h1, #header h2, #header h3, #header p, #header strong {
-    color: #ffffff !important;
+
+/* Adjust main content area to fit the new sidebar width */
+#main {
+    margin-left: 25% !important; 
 }
-#header .image.avatar {
-    border: 3px solid rgba(255, 255, 255, 0.8) !important; /* Adds a nice white ring around your photo */
+
+/* Improve Project Description Legibility */
+article p {
+    font-size: 1.1em !important; /* Increases text size slightly */
+    color: #444444 !important; /* Darkens text for better contrast against white */
+    line-height: 1.6em !important;
+}
+
+/* Make Project Titles Bolder */
+article h3 {
+    font-weight: 700 !important;
+    color: #222222 !important;
 }
